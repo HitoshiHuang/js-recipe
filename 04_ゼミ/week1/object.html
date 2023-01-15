@@ -1,11 +1,14 @@
 <body>
   <script>
     const me = {
-        name:"コウ",
-        age:21,
-        isMentor:false,
-        universityName:"waseda";
-
+      name: "コウ",
+      age: 21,
+      isMentor: false,
+      university: {
+        name: "Waseda",
+        class: 4,
+      },
+      hobbies: ["一人旅", "スポーツ", "読書"],
     }
 
     // 0 表示する
@@ -17,7 +20,7 @@
     // 2 Number
     console.log(`としは、${me.age}です!`) // ③ この行を書き換えて ○○の部分に年齢が表示されるようにしてください。
 
-      // ④ ②と同じようにmeオブジェクトを書き換えて表示されるようにしてください。
+    // ④ ②と同じようにmeオブジェクトを書き換えて表示されるようにしてください。
     // 3 Boolean
     if (me.isMentor === true) {
       console.log("私はメンターです")
@@ -32,7 +35,7 @@
 
     // 5 配列
     for (let i = 0; i < me.hobbies.length; i++) {
-      console.log(`私の趣味は${me.hobbies}です`) // ⑥ この行を書き換えて、趣味が1つずつ表示されるようにしてください。
+      console.log(`私の趣味は${me.hobbies[i]}です`) // ⑥ この行を書き換えて、趣味が1つずつ表示されるようにしてください。
     }
 
     // 6 関数
